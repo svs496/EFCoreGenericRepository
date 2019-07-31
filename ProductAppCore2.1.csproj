@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Data\test.cs" />
+    <Compile Remove="Migrations\20190123181003_InitialCreate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Suppliers\ProductAppCore2.1\Views\Suppliers\Create.cshtml" />
+  </ItemGroup>
+</Project>
